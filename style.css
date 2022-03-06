@@ -1,0 +1,20 @@
+#bod {
+    background: #212121;
+    color: azure;
+    font-family: "Bookman Old Style";
+}
+input {
+    background: gray;
+    color: azure;
+    border-color: #11999e;
+    text-align: center;
+}
+button {
+    background: #313131;
+    color: gold;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color:#11999e;
+}
