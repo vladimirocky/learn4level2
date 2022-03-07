@@ -16,7 +16,7 @@ function minus() {
 }
 function multiplication() {
   // ваш код тут
-  let result = ""
+  let result = Number(value1.value) * Number(value2.value);
   // ваш код тут
   document.getElementById("res1").innerHTML = result;
 }
