@@ -29,7 +29,15 @@ function division() {
 // используйте операторы if и else
 function my_compare() {
   // ваш код тут
+  let x = Number(value1.value) || String(value1.value);
+  let y = Number(value2.value) || String(value2.value);
   let result = ""
+
+  if (x == y) {
+    result = "выполняется равенство";
+  } else {
+    result = " не выполняется равенство";
+  }
   // ваш код тут
   document.getElementById("res1").innerHTML = result;
 }
