@@ -56,7 +56,7 @@ function my_strong() {
 }
 function logic_operators() {
   // ваш код тут
-  let result = ""
+  let result = val1.value || val2.value || val3.value || val4.value;
   // ваш код тут
   document.getElementById("res2").innerHTML = result;
 }
