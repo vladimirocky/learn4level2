@@ -26,6 +26,10 @@ function division() {
   // ваш код тут
   document.getElementById("res1").innerHTML = result;
 }
+function degree() {
+  let result = Number(value1.value) ** Number(value2.value);
+  document.getElementById("res1").innerHTML = result;
+}
 // используйте операторы if и else
 function my_compare() {
   // ваш код тут
