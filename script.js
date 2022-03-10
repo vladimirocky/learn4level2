@@ -35,14 +35,13 @@ function my_compare() {
   // ваш код тут
   let x = Number(value1.value) || String(value1.value);
   let y = Number(value2.value) || String(value2.value);
-  let result = ""
+  let result = "";
 
-  if (x == y) {
-    result = "выполняется равенство";
-  } else {
-    result = " не выполняется равенство";
-  }
-  // ваш код тут
+  (x == y) ?
+    result = "выполняется равенство" :
+    (x > y) ?
+      result = "первое значение больше" : result = "первое значение меньше";
+
   document.getElementById("res1").innerHTML = result;
 }
 function my_strong() {
