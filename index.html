@@ -9,24 +9,24 @@
 <body id="bod">
     <div>
         <h2> Калькулятор </h2>
-        <p> первое значение <input type="text" id="value1"></p>
-        <p> второе значение <input type="text" id="value2"></p>
+        <p> первое значение <input type="number" id="value1"></p>
+        <p> второе значение <input type="number" id="value2"></p>
         <button onclick="plus()">+</button>
         <button onclick="minus()">-</button>
         <button onclick="multiplication()">x</button>
         <button onclick="division()">/</button>
         <button onclick="my_compare()">нестрогое сравнение</button>
-        <button onclick="my_strong()">строгое стравнение</button>
+        <button onclick="my_strong()">строгое сравнение</button>
         <p>Результат =  <span id="res1"></span></p>
     </div>
     <hr>
     <div>
         <h2> Первый из четырех </h2>
         <ol>
-            <li><input type="text" id="val1"></li>
-            <li><input type="text" id="val2"></li>
-            <li><input type="text" id="val3"></li>
-            <li><input type="text" id="val4"></li>
+            <li><input type="text" id="val1" class="compare"></li>
+            <li><input type="text" id="val2" class="compare"></li>
+            <li><input type="text" id="val3" class="compare"></li>
+            <li><input type="text" id="val4" class="compare"></li>
         </ol>
         <button onclick="logic_operators()">вывести первое непустое поле</button>
         <p>Результат =  <span id="res2"></span></p>
