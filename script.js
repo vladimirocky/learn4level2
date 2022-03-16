@@ -31,26 +31,18 @@ function division() {
 // Сomparison functions
 
 function my_compare() {
-    // ваш код тут
-    // поля ввести "А" и "а"
     let x = Number(value1.value) || String(value1.value);
     let y = Number(value2.value) || String(value2.value);
-    //let x = value1.value;
-    //let y = value2.value;
     let result = "";
+    console.log((typeof x) +'&'+(typeof y));
     (x != y) ?
-    result = "выполняется не строгое равенство ": result = "не выполняется равенство";
+    result = "выполняется не строгое равенство ": result = "выполняется равенство";
     console.log(x);
     console.log(y);
     document.getElementById("res1").innerHTML = result;
 }
 
 function my_strong() {
-    /* Сначала поптыаемся получить число,
-     Явно приводим значение инпута к числу
-     если ввод не число - заберем строку*/
-
-    // поля ввести "А" и "А"
     let x = Number(value1.value) || String(value1.value);
     let y = Number(value2.value) || String(value2.value);
     let result = "";
@@ -64,25 +56,6 @@ function my_strong() {
 //Logic operators
 
 function logic_operators() {
-    let result = "";
-    let inputVal1 = val1.value;
-    let inputVal2 = val2.value;
-    let inputVal3 = val3.value;
-    let inputVal4 = val4.value;
-
-    if (inputVal1) {
-        result = inputVal1;
-    } else if (inputVal2) {
-        result = inputVal2;
-    } else if (inputVal3) {
-        result = inputVal3;
-    } else if (inputVal4) {
-        result = inputVal4;
-    } else {
-        result = "Undefine";
-    }
-
-
-    // ваш код тут
+    let result = val1.value || val2.value|| val3.value || val4.value;
     document.getElementById("res2").innerHTML = result;
 }
