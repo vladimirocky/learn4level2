@@ -5,7 +5,7 @@
 function  plus(){
     // Для корректной работы
     // Исправьте строку, и приведите значения к числам
-    let result = value1.value +  value2.value;
+    let result = Number(value1.value) +  Number(value2.value);
     document.getElementById("res1").innerHTML = result;
 }
 function minus(){
@@ -28,8 +28,13 @@ function division(){
 }
 // используйте операторы if и else
 function my_compare(){
-    // ваш код тут
-    let result = ""
+    let result = '';
+    if(value1.value == value2.value){
+        result = "Выполняется нестрогое равенство";
+    }else{
+        result = "Не выполняется нестрогое равенство";
+    }
+    
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
@@ -47,8 +52,26 @@ function my_strong(){
     document.getElementById("res1").innerHTML = result;
 }
 function logic_operators(){
-    // ваш код тут
     let result = ""
-    // ваш код тут
+    let first = val1.value
+    let second = val2.value
+    let third = val3.value
+    let fourth = val4.value
+
+    if(fourth){
+        result = fourth;
+    }
+
+    if(third){
+        result = third;
+    }
+
+    if(second){
+        result = second;
+    }
+
+    if(first){
+        result = first;
+    }
     document.getElementById("res2").innerHTML = result;
 }
