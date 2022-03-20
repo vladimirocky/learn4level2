@@ -8,22 +8,19 @@ function  plus(){
     let result = Number(value1.value) +  Number(value2.value);
     document.getElementById("res1").innerHTML = result;
 }
-function minus(){
-    // ваш код тут
-    let result = ""
-    // ваш код тут
+function  minus(){
+    let result = Number(value1.value) -  Number(value2.value);
     document.getElementById("res1").innerHTML = result;
 }
-function multiplication(){
-    // ваш код тут
-    let result = ""
-    // ваш код тут
+function  multiplication(){
+    let result = Number(value1.value) *  Number(value2.value);
     document.getElementById("res1").innerHTML = result;
 }
-function division(){
-    // ваш код тут
-    let result = ""
-    // ваш код тут
+function  division(){
+    let result = Number(value1.value) /  Number(value2.value);
+    if(result == 'Infinity'){
+        result = 'Бесконечно малая величина';
+    }
     document.getElementById("res1").innerHTML = result;
 }
 // используйте операторы if и else
