@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>learn4level2</title>
+    <script src="script.js"></script>
+</head>
+<body id="bod">
+    <div>
+        <h2> Калькулятор </h2>
+        <p> первое значение <input type="text" id="value1"></p>
+        <p> второе значение <input type="text" id="value2"></p>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="multiplication()">x</button>
+        <button onclick="division()">/</button>
+        <button onclick="my_compare()">нестрогое сравнение</button>
+        <button onclick="my_strong()">строгое стравнение</button>
+        <p>Результат =  <span id="res1"></span></p>
+    </div>
+    <hr>
+    <div>
+        <h2> Первый из четырех </h2>
+        <ol>
+            <li><input type="text" id="val1"></li>
+            <li><input type="text" id="val2"></li>
+            <li><input type="text" id="val3"></li>
+            <li><input type="text" id="val4"></li>
+        </ol>
+        <button onclick="logic_operators()">вывести первое непустое поле</button>
+        <p>Результат =  <span id="res2"></span></p>
+    </div>
+</body>
+</html>
