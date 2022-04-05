@@ -65,7 +65,10 @@ function logic_operators(){
      } else if(val4.value != ''){
          result = val4.value
      }
-    
+    /**
+     * тут можно решить в одну строчку с помощью логического оператора
+     */
+
     // ваш код тут
     document.getElementById("res2").innerHTML = result;
 }
