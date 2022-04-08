@@ -5,31 +5,36 @@
 function  plus(){
     // Для корректной работы
     // Исправьте строку, и приведите значения к числам
-    let result = value1.value +  value2.value;
+    let result = Number(value1.value) +  Number(value2.value);
     document.getElementById("res1").innerHTML = result;
 }
 function minus(){
     // ваш код тут
-    let result = ""
+    let result = value1.value - value2.value;
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
 function multiplication(){
     // ваш код тут
-    let result = ""
+    let result = value1.value * value2.value;
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
 function division(){
     // ваш код тут
-    let result = ""
+    let result = value1.value / value2.value
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
 // используйте операторы if и else
 function my_compare(){
-    // ваш код тут
-    let result = ""
+    let result = '';
+    let x = Number(value1.value) || String(value1.value);
+    let y = Number(value2.value) || String(value2.value);
+    if (x == y)
+        result = ' выполняется нестрогое равенство ';
+    else
+        result = ' не выполняется нестрогое равенство '
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
@@ -48,7 +53,8 @@ function my_strong(){
 }
 function logic_operators(){
     // ваш код тут
-    let result = ""
+    let x = val1.value || val2.value || val3.value || val4.value;
+    let result = x;
     // ваш код тут
     document.getElementById("res2").innerHTML = result;
 }
