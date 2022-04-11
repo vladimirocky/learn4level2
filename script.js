@@ -2,7 +2,7 @@
  ДОПИШИТЕ КОД ФУНКЦИЙ И ИСПРАВЬТЕ ФУНКЦИЮ plus
  */
 
-function  plus(){
+function plus(){
     // Для корректной работы
     // Исправьте строку, и приведите значения к числам
     let result = Number(a.value) +  Number(b.value);
@@ -29,6 +29,12 @@ function division(){
 // используйте операторы if и else
 function my_compare(){
     // ваш код тут
+    /**
+     *
+     * а зачем тут '!!' ?
+     * это преобразовывает к булевому типу значение, так мы не сможем их сравнить потом :D
+     * советую просто убрать !!
+     */
     let result = !!a.value == !!b.value ? true : false;
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
