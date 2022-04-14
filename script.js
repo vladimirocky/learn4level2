@@ -35,7 +35,7 @@ function my_compare(){
      * это преобразовывает к булевому типу значение, так мы не сможем их сравнить потом :D
      * советую просто убрать !!
      */
-    let result = !!a.value == !!b.value ? true : false;
+    let result = Number(a.value) && String(a.value) == Number(a.value) && String(a.value) ? true : false;
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
