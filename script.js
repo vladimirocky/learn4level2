@@ -59,19 +59,19 @@ function logic_operators(){
      * Тут можно решить одной строкой (в разборе показано)
      *  ---------------------------------------------------------------
      */
-    let result = ""
-    if(val1.value !=''){
-        result = val1.value
-    }
-    else if(val2.value !=''){
-        result = val2.value
-    }
-    else if(val3.value !=''){
-        result = val3.value
-    }
-    else if(val4.value !=''){
-        result = val4.value
-    }
+    let result = val1.value || val2.value || val3.value || val4.value;
+//     if(val1.value !=''){
+//         result = val1.value
+//     }
+//     else if(val2.value !=''){
+//         result = val2.value
+//     }
+//     else if(val3.value !=''){
+//         result = val3.value
+//     }
+//     else if(val4.value !=''){
+//         result = val4.value
+//     }
     // ваш код тут
     document.getElementById("res2").innerHTML = result;
 }
