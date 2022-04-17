@@ -25,8 +25,8 @@ function division(){
 // используйте операторы if и else
 function my_compare(){
     // ваш код тут
-    let x = Number(value1.value) && String(value1.value)
-    let y = Number(value2.value) && String(value2.value)
+    let x = Number(value1.value) || String(value1.value)
+    let y = Number(value2.value) || String(value2.value)
     /** ---------------------------------------------------------------
      * Если мы используем && то тогда запишем первое пустое значение
      * Тоесть возвратится первое ложное (на котором остановились вычисления),
