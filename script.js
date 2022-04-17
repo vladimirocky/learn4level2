@@ -1,6 +1,9 @@
 /*
  ДОПИШИТЕ КОД ФУНКЦИЙ И ИСПРАВЬТЕ ФУНКЦИЮ plus
  */
+/**
+ * Оставил комментарии в my_compare и logic_operators
+ */
 
 let value1;
 let value2;
@@ -45,6 +48,9 @@ function my_compare(){
     else {
         result = ("Число 2 больше числа 1");
     }
+    /**
+     * А если равны?
+     */
     document.getElementById("res1").innerHTML = result;
 }
 function my_strong(){
@@ -66,7 +72,10 @@ function logic_operators(){
     let l = Number(document.getElementById("val2").value) || null;
     let m = Number(document.getElementById("val3").value) || null;
     let n = Number(document.getElementById("val4").value) || null;
-
+    /**
+     * А зачем приводить к number ?
+     * Ведь тогда если мы строку вводим запишется null
+     */
     let result = k || l || m || n || null;
     document.getElementById("res2").innerHTML = result;
 
