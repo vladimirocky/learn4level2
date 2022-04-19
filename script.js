@@ -45,9 +45,13 @@ function my_compare(){
     if (value1 > value2) {
         result = ("Число 1 больше числа 2");
     }
-    else {
+    else if (value1 < value2) {
         result = ("Число 2 больше числа 1");
     }
+    else {
+        result = ("Числа равны");
+    }
+
     /**
      * А если равны?
      */
@@ -68,13 +72,14 @@ function my_strong(){
 }
 function logic_operators(){
     // ваш код тут
-    let k = Number(document.getElementById("val1").value) || null;
-    let l = Number(document.getElementById("val2").value) || null;
-    let m = Number(document.getElementById("val3").value) || null;
-    let n = Number(document.getElementById("val4").value) || null;
+    let k = (document.getElementById("val1").value) || null;
+    let l = (document.getElementById("val2").value) || null;
+    let m = (document.getElementById("val3").value) || null;
+    let n = (document.getElementById("val4").value) || null;
     /**
      * А зачем приводить к number ?
      * Ведь тогда если мы строку вводим запишется null
+     Ответ: Не знаю) Подумал, что цифры будем вводить только) Исправил
      */
     let result = k || l || m || n || null;
     document.getElementById("res2").innerHTML = result;
