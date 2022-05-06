@@ -10,26 +10,26 @@ function  plus(){
 }
 function minus(){
     // ваш код тут
-    let result = ""
+    let result = parseInt(value1.value) -  parseInt(value2.value);
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
 function multiplication(){
     // ваш код тут
-    let result = ""
+    let result = parseInt(value1.value) *  parseInt(value2.value);
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
 function division(){
     // ваш код тут
-    let result = ""
+    let result = parseInt(value1.value) /  parseInt(value2.value);
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
 // используйте операторы if и else
 function my_compare(){
     // ваш код тут
-    let result = ""
+    let result = parseInt(value1.value) ==  parseInt(value2.value);
     // ваш код тут
     document.getElementById("res1").innerHTML = result;
 }
@@ -48,7 +48,7 @@ function my_strong(){
 }
 function logic_operators(){
     // ваш код тут
-    let result = ""
+    let result = Number(val1.value || val2.value || val3.value || val4.value);
     // ваш код тут
     document.getElementById("res2").innerHTML = result;
 }
