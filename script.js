@@ -5,7 +5,7 @@
 function  plus(){
     // Для корректной работы
     // Исправьте строку, и приведите значения к числам
-    let result = value1.value +  value2.value;
+    let result = parseInt(value1.value) +  parseInt(value2.value);
     document.getElementById("res1").innerHTML = result;
 }
 function minus(){
